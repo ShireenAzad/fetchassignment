@@ -1,6 +1,6 @@
 import {mocking} from "../src/app"
 import fetchMock from "jest-fetch-mock";
-jest.mock("./app.ts")
+jest.mock("../src/app.ts")
 fetchMock.enableMocks();
 describe("api fetched or not",function()
 {
