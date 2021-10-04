@@ -1,4 +1,5 @@
                             TEST DRIVEN DEVELOPMENT
+                            
     PREREQUISITES:
     ==========================
 npm init
@@ -45,3 +46,7 @@ Run and Refactor the code :
 
 2.If success,add new test case and follow step1.
 
+We can fetch the api using Axios also.
+Before fetching we need to install 
+
+npm install axios
