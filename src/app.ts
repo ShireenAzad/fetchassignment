@@ -9,7 +9,7 @@ export async function mocking() {
     const data = await result.json();
     return data.status
   } catch (e) {
-    return Promise.reject(e)
+    return null
   }
 }
 
