@@ -6,25 +6,19 @@ fetchMock.enableMocks();
 describe("api fetched or not",function()
 {
     
-    it("failedcase",async function ():Promise<any> {
+    it("failedcase",function () {
         
-        fetchMock.mockReject(async () =>await mocking().then(() => 
+        fetchMock.mockReject(() =>mocking().then(() => 
         {
             Promise.reject("failed")
             expect.assertions(1)
 
-        } 
-        )
-
-        ) 
-        
-        
-        
+        } ))    
         
     })
-    it("success case",async function (): Promise<any>{
-        //expect.assertions(1)
-        fetchMock.mockResponse(async () => await mocking().then(() => {
+    it("success case",function (){
+        
+        fetchMock.mockResponse(() => mocking().then(() => {
             expect.assertions(1)
             return "success"}
         ))
@@ -33,6 +27,8 @@ describe("api fetched or not",function()
     
     
 })   
+
+
 
 //Fetching manually without mocking by using Try catch
 // describe("checking status",function()
